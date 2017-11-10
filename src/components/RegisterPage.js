@@ -31,29 +31,28 @@ class RegisterPage extends Component {
 
   lNameChanged(event) {
     console.log(`Last name: ${event.target.value}`);
-    this.setState({ fName: event.target.value });
+    this.setState({ lName: event.target.value });
   }
 
   emailChanged(event) {
     console.log(`Email: ${event.target.value}`);
-    this.setState({ fName: event.target.value });
+    this.setState({ email: event.target.value });
   }
 
   passwordChanged(event) {
     console.log(`Password: ${event.target.value}`);
-    this.setState({ fName: event.target.value });
+    this.setState({ password: event.target.value });
   }
 
   comfPasswordChanged(event) {
     console.log(`Comfirm Password: ${event.target.value}`);
-    this.setState({ fName: event.target.value });
+    this.setState({ comfPassword: event.target.value });
   }
 
   onSubmitForm(event) {
     event.preventDefault()
     // TODO: check if password matches the confim password
-    console.log(`EMAIL: ${this.state.email}`);
-    console.log(`PASSWORD: ${this.state.password}`);
+    console.log("EMAIL ", this.state.email);
     this.props.registerUser(this.state.email, this.state.password);
   }
 
@@ -78,9 +77,9 @@ class RegisterPage extends Component {
 			    				</div>
 			    			</div>
 
-			    			<div className="form-group">
+                <div className="form-group">
 			    				<input onChange={this.emailChanged} type="email" name="email" id="email" className="form-control input-sm" placeholder="Email Address"></input>
-			    			</div>
+                </div>
 
 			    			<div className="row">
 			    				<div className="col-xs-6 col-sm-6 col-md-6">

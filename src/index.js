@@ -21,6 +21,7 @@ ReactDOM.render(
 firebase.auth().onAuthStateChanged((user) => {
   if (user) {
     console.log('logged in');
+    console.log(`USER ID: ${user.uid}`);
   } else {
     console.log('logged out');
   }
