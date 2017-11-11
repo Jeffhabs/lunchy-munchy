@@ -1,13 +1,18 @@
 import React, { Component } from 'react';
-import RegisterPage from '../components/RegisterPage'
-//import { BrowserRouter, Route, Switch, Link, NavLink } from 'react-router';
+import { BrowserRouter, Route } from 'react-router-dom';
+
+import RegisterPage from '../components/RegisterPage';
+import LandingPage from '../components/LandingPage';
 
 export default class App extends Component {
   render() {
     return (
-      <div>
-        <RegisterPage />
-      </div>
+      <BrowserRouter>
+        <div>
+          <Route path="/landing" component={ LandingPage }/>
+          <Route path="/register" component={RegisterPage}/>
+        </div>
+      </BrowserRouter>
     );
   }
 }

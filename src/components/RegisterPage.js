@@ -52,7 +52,6 @@ class RegisterPage extends Component {
   onSubmitForm(event) {
     event.preventDefault()
     // TODO: check if password matches the confim password
-    console.log("EMAIL ", this.state.email);
     this.props.registerUser(this.state.email, this.state.password);
   }
 

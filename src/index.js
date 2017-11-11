@@ -1,8 +1,8 @@
 import React from 'react';
-import { BrowserRouter, Route, Switch, Link, NavLink, browserHistory } from 'react-router';
 import { RegisterPage } from './components/RegisterPage';
 import ReduxPromise from 'redux-promise';
 import ReactDOM from 'react-dom';
+import { BrowserRouter, Route } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import { createStore, applyMiddleware } from 'redux';
 
