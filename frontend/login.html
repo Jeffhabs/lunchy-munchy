@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
     <head>
@@ -17,8 +18,7 @@
                                 <img src="icons/person.svg" style="height:35px;" alt="User">
                         </button>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                          <a class="dropdown-item" href="login.html">Sign In</a>
-                          <a class="dropdown-item" href="#">Forgot Password</a>
+                          <a class="dropdown-item" href="index.html">Sign Up</a>
 
                       </div>
             </div>
@@ -29,32 +29,18 @@
     <body>
 
         <div id="form">
-            <h1 id="signup">Sign Up</h1>
+            <h1 id="signup" style="text-align:left;">Log In</h1>
             <form>
                     <div class="row">
                       <div class="col padding">
-                        <input id="Fname" type="text" class="form-control" placeholder="First name">
+                        <input type="text" class="form-control" placeholder="Email">
                       </div>
                       <div class="col padding">
-                        <input id="Lname" type="text" class="form-control" placeholder="Last name">
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col padding">
-                            <input id="email" type="text" class="form-control" placeholder="Email">
+                        <input type="password" class="form-control" placeholder="Password">
                       </div>
                       <div class="col padding">
-                            <input id="pwd" type="password" class="form-control" placeholder="Password">
+                            <button type="submit" class="btn btn-primary" style="background-color:black; border:white;">Log In</button>
                       </div>
-                    </div>
-                    <div class="row">
-                      <div  class="col padding">
-                            <input id="pwdConfirm" type="password" class="form-control" placeholder="Password Confirm">
-                      </div>
-                      <div class="col padding">
-                            <button type="submit" style="background-color:black; border:white;" class="btn btn-primary">Submit</button>
-                      </div>
-
                     </div>
                   </form>
         </div>
